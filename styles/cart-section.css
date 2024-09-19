@@ -1,0 +1,199 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #000;
+}
+
+.cart-summary {
+  background-color: #fff;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.message h2 {
+  font-size: 1.5em;
+  color: #000;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+  height: 50vh;
+  overflow: scroll;
+
+}
+.cart-items::-webkit-scrollbar{
+  display: none;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+  max-width: 150px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h3 {
+  font-size: 1.2em;
+  color: #000;
+}
+
+.item-info p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000;
+}
+
+.quantity {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quantity label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.quantity input {
+  width: 60px;
+  padding: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  outline: none;
+
+}
+.update-remove{
+  margin-top: 10px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.button.secondary {
+  background-color: #ccc;
+  color: #000;
+}
+
+.button.secondary:hover {
+  background-color: #999;
+}
+
+.remove {
+  background-color: black;
+}
+
+.remove:hover {
+  background-color: rgb(60, 59, 59);
+}
+
+.update {
+  background-color: black;
+}
+
+.update:hover {
+  background-color: rgb(60, 59, 59);;
+}
+
+.total {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.actions {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .cart-item img {
+      /* max-width: 100%; */
+      max-width: 30%;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .item-info {
+      width: 100%;
+  }
+
+  .quantity {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .button {
+      margin: 5px 0;
+  }
+}

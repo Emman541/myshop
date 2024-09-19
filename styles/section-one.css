@@ -1,0 +1,40 @@
+.first-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,.1)), url(../images/vanity-mirror-silver.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 85vh;
+  width: 100%;
+}
+.section-one{
+  text-align: center;
+}
+.section-one .first-p, .section-one .second-p, .section-one .third-p {
+  margin-bottom: 20px;
+}
+.section-one .first-p{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.section-one .second-p{
+  font-size: 50px;
+  font-weight: bold;
+}
+.section-one .third-p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.section-one button {
+  padding: 10px 25px;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.section-one button:hover{
+  background-color: rgb(64, 63, 63)
+}

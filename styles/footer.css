@@ -1,0 +1,135 @@
+/* Footer Styles */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about, .footer-links, .footer-subscribe, .footer-social {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+h2{
+  color: white;
+}
+
+.footer-about h2, .footer-links h2, .footer-subscribe h2, .footer-social h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-about p, .footer-subscribe p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+}
+.footer-subscribe p{
+  margin-bottom: 20px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #aaa;
+}
+
+.footer-subscribe form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-subscribe input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.footer-subscribe button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-subscribe button:hover {
+  background-color: #ccc;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social ul li {
+  display: inline;
+}
+
+.footer-social .social-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  /* background-color: #fff; */
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+/* .footer-social .social-icon.facebook {
+  background: url('facebook-icon.png') no-repeat center center/20px;
+}
+
+.footer-social .social-icon.twitter {
+  background: url('twitter-icon.png') no-repeat center center/20px;
+}
+
+.footer-social .social-icon.instagram {
+  background: url('instagram-icon.png') no-repeat center center/20px;
+} */
+
+.footer-social .social-icon:hover {
+  background-color: #ccc;
+}
+.footer-social i{
+  font-size: 20px;
+  color: white;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #111;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}

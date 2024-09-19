@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout and Tracking</title>
+    <link rel="stylesheet" href="../styles/checkout.css">
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-tracking-box">
+            <!-- Checkout Section -->
+            <div class="section checkout">
+                <h1>Checkout</h1>
+                <form>
+                    <div class="section-content">
+                        <h2>Shipping Details</h2>
+                        <div class="textbox">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Mr Fappy" required>
+                        </div>
+                        <div class="textbox">
+                            <label for="cardnumber">Card Number</label>
+                            <input type="text" id="cardnumber" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        <div class="textbox">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="Your Address" required>
+                        </div>
+                        <div class="textbox">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="City" required>
+                        </div>
+                        <div class="textbox">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" placeholder="Country" required>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <h2>Order Summary</h2>
+                        <div class="summary-item">
+                            <p>Item 1</p>
+                            <p>$20.00</p>
+                        </div>
+                        <div class="summary-item">
+                            <p>Item 2</p>
+                            <p>$30.00</p>
+                        </div>
+                        <div class="summary-item">
+                            <p><strong>Total</strong></p>
+                            <p><strong>$50.00</strong></p>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn" value="Place Order">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script type="module" src="../scripts/navbar.js"></script>
+</body>
+</html>

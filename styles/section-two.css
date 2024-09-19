@@ -1,0 +1,23 @@
+.second-section{  
+  padding: 0px 100px;
+}
+.second-section .section-two, .third-section .section-three, .fourth-section .section-four{
+  text-align: center;
+  padding-top: 100px;
+}
+.section-two .first-p, .section-two .second-p, .section-three .first-p, .section-three .second-p, .section-four .first-p, .section-four .second-p {
+  margin-bottom: 30px;
+}
+.section-two .first-p, .section-three .first-p, .section-four .first-p{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.section-two .second-p, .section-three .second-p, .section-four .second-p{
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+.category-container{
+  display: flex;
+  gap: 20px;
+}

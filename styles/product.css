@@ -1,0 +1,20 @@
+.home-shop{
+  margin-top: 130px;
+}
+.home-shop .home-link{
+  font-size: 20px;
+}
+.home-shop .shop-text{
+  font-size: 100px;
+  font-weight: bold;
+}
+.third-section .shop-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.shop-section .default-sort select{
+  padding: 10px;
+  outline: none;
+}

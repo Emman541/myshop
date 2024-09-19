@@ -1,0 +1,92 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+nav{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+}
+.container .fa-bars{
+  display: none;
+}
+ .logo p {
+  font-size: 30px;
+  font-weight: bold;
+ }
+ .logo span{
+  color: rgb(164, 158, 158);
+  font-size: 15px;
+ }
+ .middle-nav-section, .middle-nav-section ul, .right-nav-section, .right-nav-section ul, .login-cart-section{
+  display: flex;
+  gap: 10px;
+ }
+ .right-nav-section{
+  align-items: center;
+  justify-content: center;
+ }
+ .login-cart-section{
+  align-items: center;
+ }
+ .login-cart-section p{
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+ }
+ .login-cart-section p:hover{
+  background-color: rgb(61, 60, 60);
+ }
+ .cart-icon{
+  display: flex;
+ }
+ .cart-icon p{
+  font-size: 10px;
+  background-color: transparent;
+  color: black;
+  margin-left: -10px;
+
+ }
+ 
+ @media (max-width: 768px){
+  .container .fa-bars{
+    display: block;
+    cursor: pointer;
+  }
+  .right-nav-section ul{
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 113px;
+    right: -1000px;
+    width: 200px;
+    height: 87vh;
+    padding-right: 10px;
+    transition: 0.5s;
+  }
+  .right-nav-section ul.active{
+    right: 0;
+    transition: 0.5s;
+  }
+  .right-nav-section ul li{
+    border-bottom: 2px ;
+    padding-left: 50%;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  }
